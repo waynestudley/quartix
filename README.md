@@ -10,6 +10,10 @@
    ...bob's your father's brother
 ```
 
-- notes
+- Notes
 
--- I'd have componetised more items given more time - rather than bundle everything into one app.js and one index.css file
+- I'd have componetised more items given more time - rather than bundle everything into one app.js and one index.css file
+
+- There's a couple of quick fixes in the css for some simple alignment - not exactly production ready
+
+- Given the simplicity of the task I decided not to go down the SCSS/SASS route
