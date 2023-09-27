@@ -11,3 +11,5 @@
 ```
 
 - notes
+
+-- I'd have componetised more items given more time - rather than bundle everything into one app.js and one index.css file
