@@ -1,0 +1,158 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  color:#323434;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #323434;
+  background-color: #FAFAFA;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-width: 680px;
+
+}
+
+.selected {
+  color: #13ab5b;
+}
+
+/* makeshift top alignment */
+.vehicles {
+  margin: -0.5vh 0;
+}
+
+.sortby {
+  font-weight: bolder;
+  cursor: default;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1vh;
+  padding: 1vh;
+}
+
+.flex-container.sort-by {
+  max-width: 40vw;
+  justify-content: space-around;
+  margin: 1.2vh;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  line-height: 0.0;
+  border-radius: 4px;
+  min-width: 12vw;
+  max-height: 4.1vh;
+  min-height: 3vh;
+  border: 1px solid transparent;
+  flex-wrap: wrap;
+  margin: 1vh;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #13ab5b;
+  cursor: pointer;
+  transition: border-color 0.5s;
+  position: relative;
+}
+
+button.vehicle-select {
+  border: 2px solid #13ab5b;
+  background-color: #FAFAFA;
+  color: #323434;
+}
+
+button.inspection-select {
+  border: 2px solid #13ab5b;
+  background-color: #FAFAFA;
+  color: #323434;
+}
+button.none::before {
+  display: none;
+  content: '';
+  width: 0;
+  height: 0;
+}
+
+button:before {
+  content: attr(data-count);
+  width: 2vh;
+  height: 2vh;
+  line-height: 2vh;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  background: red;
+  border: 2px solid #FFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  color: #FFF;
+  position: absolute;
+    top: -1.4vh;
+    left: 10.2vw;
+}
+
+button.badge-top-right:before {
+  right: auto;
+}
+
+.select-inspection {
+  height: 50px;
+  position: relative;
+  margin: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+button.attach-inspection {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+button:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.main {
+  width: 100vw;
+}
+
+.title {
+  padding: 2vh;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2vh;
+  color: white;
+  background-color: #323434;
+}
+
+.sub-title {
+  padding: 1vh;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.6vh;
+  background-color: lightgrey;
+}
+
+.popup-container {
+  position: relative;
+  left: 0;
+}
+
